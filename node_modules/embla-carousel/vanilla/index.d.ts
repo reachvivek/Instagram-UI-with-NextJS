@@ -1,0 +1,26 @@
+import { Engine } from './components/engine';
+import { EventEmitter } from './components/eventEmitter';
+import { EmblaOptions } from './components/options';
+export declare type EmblaCarousel = {
+    canScrollNext: () => boolean;
+    canScrollPrev: () => boolean;
+    clickAllowed: () => boolean;
+    containerNode: () => HTMLElement;
+    dangerouslyGetEngine: () => Engine;
+    destroy: () => void;
+    off: EventEmitter['off'];
+    on: EventEmitter['on'];
+    previousScrollSnap: () => number;
+    reInit: (options?: EmblaOptions) => void;
+    scrollNext: () => void;
+    scrollPrev: () => void;
+    scrollProgress: () => number;
+    scrollSnapList: () => number[];
+    scrollTo: (index: number) => void;
+    selectedScrollSnap: () => number;
+    slideNodes: () => HTMLElement[];
+    slidesInView: (target?: boolean) => number[];
+    slidesNotInView: (target?: boolean) => number[];
+};
+declare function EmblaCarousel(sliderRoot: HTMLElement, userOptions?: EmblaOptions): EmblaCarousel;
+export default EmblaCarousel;
