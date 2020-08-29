@@ -1,4 +1,4 @@
-# `Instagram UI Clone with Next.JS`
+# `Instagram UI with Next.JS`
 ![Instagram Clone UI](https://github.com/reachvivek/Instagram-Clone-NextJs-App/blob/master/instaclone.gif)
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
