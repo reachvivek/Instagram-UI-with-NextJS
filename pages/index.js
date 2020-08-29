@@ -14,8 +14,8 @@ export default ({ stories, feed }) => {
 };
 
 export async function getServerSideProps({req}) {
-  const storiesRes = await fetch(`${process.env.HOST_URL}api/stories`);
-  const feedRes = await fetch(`${process.env.HOST_URL}api/feed`);
+  const storiesRes = await fetch(`https://instagram-clone-next-js-app.vercel.app/api/stories`);
+  const feedRes = await fetch(`https://instagram-clone-next-js-app.vercel.app/api/feed`);
 
   const feed = await feedRes.json();
   const stories = await storiesRes.json();
